@@ -1,8 +1,6 @@
 // vite.config.js
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/", // Change to "/subfolder/" if deployed in a subpath
+  base: "/myapp/", // or '/' if deployed at root
 });
