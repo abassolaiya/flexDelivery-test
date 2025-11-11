@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "vite build && find dist -type f -name '*.js' -exec sed -i '' 's|//||' {} \\;",
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

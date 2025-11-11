@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: marketplace-dashboard
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
+    headers:
+      - path: /myapp/assets/*.js
+        name: Content-Type
+        value: application/javascript
